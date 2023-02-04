@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Test webhooks</title>
+</head>
+<body>
+    <section class="formulario">
+        <h1>OPTION 1: SEND DISCORD WEBHOOKS IN EMBED FORMAT</h1>
+        <form action="./webhooks/send_embed.php" method="post" class="send_embed">
+            <label for="">Embed title:</label>
+            <input type="text" name="title" id="title" placeholder="Title">
+            <label for="">Embed Description:</label>
+            <input type="text" name="description" id="description" placeholder="Description">
+            <label for="">Embed footer:</label>
+            <input type="text" name="footer" id="footer" placeholder="Footer">
+            <input type="submit" value="enviar" class="submit_send" name="send_embed">
+        </form>
+        <h1>OPTION 2: SEND A SIMPLE MESSAGE WITH WEBHOOKS</h1>
+        <form action="./webhooks/send.php" method="post" class="form_send">
+            <label>Message:</label>
+            <input type="text" name="message" id="message" placeholder="Message">
+            <input type="submit" value="enviar" name="send_normally" class="submit_send">
+        </form>
+    </section>
+</body>
+</html>
